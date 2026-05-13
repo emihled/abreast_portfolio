@@ -117,6 +117,14 @@ button {
   letter-spacing: 1px;
 }
 
+/* PROJECT BUTTON SIZE */
+.card button {
+  width: 90px;
+  padding: 9px 9px;
+  font-size: 0.3rem;
+  margin-top: 15px;
+}
+
 button:hover {
   background: #00ff66;
   color: #000;
@@ -388,8 +396,25 @@ footer {
   <div class="grid">
     <div class="card"><h3>PROJECT_01.exe</h3><p>E-commerce collaboration project.</p></div>
     <div class="card"><h3>PROJECT_02.exe</h3><p>Hr assist systems collaboration project.</p></div>
-    <div class="card"><h3>PROJECT_03.exe</h3><p>MAgazine Cover Editorial.</p></div>
-    <div class="card"><h3>PROJECT_04.exe</h3><p>Graphic editorial designs.</p></div>
+    <div class="card">
+      <h3>PROJECT_03.exe</h3>
+      <p>Magazine Cover Editorial.</p>
+
+      <button 
+        onclick="window.open('YOUR_PROJECT3_LINK', '_blank')">
+        VIEW PROJECT
+      </button>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="card">
+      <h3>PROJECT_04.exe</h3>
+      <p>Graphic editorial designs.</p>
+
+      <button 
+        onclick="window.open('YOUR_PROJECT4_LINK', '_blank')">
+        VIEW PROJECT
+      </button>
   </div>
 </div>
 
@@ -485,7 +510,7 @@ let columns = canvas.width / fontSize;
 let drops = Array(Math.floor(columns)).fill(1);
 
 function draw() {
-  ctx.fillStyle = "rgba(5, 6, 7, 0.08)";
+  ctx.fillStyle = "rgba(5, 6, 7, 0.40)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   ctx.fillStyle = "#00ff66";
