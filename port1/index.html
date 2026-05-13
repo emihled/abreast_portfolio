@@ -481,8 +481,8 @@ const observer = new IntersectionObserver((entries) => {
       navBar.style.left = "50%";
       navBar.style.transform = "translateX(-50%)";
       navBar.style.zIndex = "999";
-      navBar.style.background = "#000000cc";
-      navBar.style.borderBottom = "3px solid rgba(0, 255, 102, 0.2)";
+      navBar.style.background = "rgba(18,18,20,0.78)";
+      navBar.style.borderBottom = "1px solid rgba(180,180,180,0.12)";
       navBar.style.borderRadius = "3px";
       navBar.style.width = "90vw";
     } else {
@@ -490,8 +490,8 @@ const observer = new IntersectionObserver((entries) => {
       navBar.style.position = "static";
       navBar.style.transform = "none";
       navBar.style.width = "70vw";
-      navBar.style.background = "rgba(5, 6, 7, 0.8)";
-      navBar.style.borderBottom = "3px solid rgba(0, 255, 102, 0.2)";
+      navBar.style.background = "rgba(18,18,20,0.65)";
+      navBar.style.borderBottom = "1px solid rgba(180,180,180,0.08)";
       navBar.style.borderRadius = "3px";
     }
 
@@ -504,16 +504,16 @@ const ctx = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
-let letters = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-const fontSize = 14;
+let letters = "01".split("");
+const fontSize = 10;
 let columns = canvas.width / fontSize;
 let drops = Array(Math.floor(columns)).fill(1);
 
 function draw() {
-  ctx.fillStyle = "rgba(5, 6, 7, 0.40)";
+  ctx.fillStyle = "rgba(5, 6, 7, 0.18)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  ctx.fillStyle = "#00ff66";
+  ctx.fillStyle = "rgba(140, 160, 145, 0.55)";
   ctx.font = fontSize + "px monospace";
 
   for (let i = 0; i < drops.length; i++) {
